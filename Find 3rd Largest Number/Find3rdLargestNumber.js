@@ -24,10 +24,11 @@ app.get('/findThirdLargest', function (req, res) {
       }
     }
     let list = arr;
-
+console.log("Example app listening at http://%s:%s", host, port)
      if (list.length >= 3){
          return list[2];
      } else {
          return -1
+        
      }
  }
